@@ -7,12 +7,12 @@ const divcito = document.getElementById('contenedor');
 botoncito.addEventListener("click",function(){
     const inputItem = inputtt.value;
 
-    if (inputItem.trim() !== '') { // Verificar que el valor no esté vacío
-        const newItem = document.createElement('li'); // Crear un nuevo elemento li
-        newItem.textContent = inputItem; // Establecer el contenido del nuevo elemento
-        divcito.appendChild(newItem); // Agregar el nuevo elemento a la lista
+    if (inputItem.trim() !== '') {
+        const newItem = document.createElement('li'); 
+        newItem.textContent = inputItem; 
+        divcito.appendChild(newItem);
         
-        inputtt.value = ''; // Limpiar el campo de entrada
+        inputtt.value = ''; 
       }
 
 });
